@@ -1,7 +1,9 @@
 name: Deploy SIGMA
+
 on:
   push:
-    branches: [ "main" ]  # ou adicione "workflow_dispatch:" para rodar manualmente
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   deploy:
