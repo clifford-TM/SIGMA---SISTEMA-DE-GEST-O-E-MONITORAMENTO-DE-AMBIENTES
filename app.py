@@ -11,6 +11,7 @@ PUBLIC = BASE_DIR / "public"
 # Servir arquivos estáticos (HTML/CSS/JS/imagens) em /static
 app.mount("/static", StaticFiles(directory=str(PUBLIC), html=True), name="static")
 
+#comentário para testar deploy
 @app.get("/", response_class=HTMLResponse)
 def root():
     index = PUBLIC / "index.html"
